@@ -1,0 +1,61 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+查看文件的两个版本之间的差异如何帮助你了解引入的错误？
+    Fill in your answer here
+    通过diff -u 命令可以查看两个文件的不同
+    -表示移除的内容
+    +表示新增的内容
+    并且可以查看typo等常见错误
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+从长远来看，能轻松访问文件的整个历史记录将如何提高编程者的效率？
+
+    Fill in your answer here
+    能够访问文件等历史记录可以轻松的得到哪些内容被更改，从而提高编程效率
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+你认为，手动选择何时创建提交（像在 Git 中做的那样）与自动保存版本（如 Google Docs 所做的那样）各有何优缺点？
+
+    Fill in your answer here
+    手动提交可以根据逻辑上的更改来提交内容，缺点是程序员可能会忘记提交，提交内容过小过大也会造成困扰
+	自动版本保存避免了忘记提交的可能，但是自动保存可能并不是符合逻辑上的更改，只是根据时间段来保存的
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+你认为为什么一些版本控制系统（例如 Git）允许在一次提交中保存多个文件，而其他系统（例如 Google Docs）单独对待每个文件？
+
+    Fill in your answer here
+    因为一个项目有多个子文件组成，这些文件相互影响，所以修改之后需要保存多个文件
+
+How can you use the commands git log and git diff to view the history of files?
+如何使用命令 git log 和 git diff 来查看文件的历史记录？
+
+    Fill in your answer here
+    git log 可以查看提交历史 每个提交包括
+提交ID  commit b0678b161fcf74467ed3a63110557e3d6229cfa6
+作者  	Author: cbuckey <caroline@udacity.com>
+日期 	Date:   Mon May 24 04:15:21 2010 -0700
+
+描述     Revert controls
+
+commit f19cb1b80fe27e938e4d72770ca0a42f25e99ecc
+Author: cbuckey <caroline@udacity.com>
+Date:   Mon May 24 04:03:05 2010 -0700
+
+    Fix typo in space
+使用 git diff ID1 ID2 查看提交所做出的更改
+
+How might using version control make you more confident to make changes that
+could break something?
+使用版本控制，如何让你更有信心进行有可能会造成破坏的更改？
+
+    Fill in your answer here
+    版本控制可以让我们随时恢复到之前的版本，所以可以大胆的尝试新的功能更改
+
+Now that you have your workspace set up, what do you want to try using Git for?
+现在你已设置了工作空间，你想尝试使用 Git 来做些什么？
+    Fill in your answer here
+    创建自己的仓库和博客
