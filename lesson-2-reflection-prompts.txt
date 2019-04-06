@@ -1,18 +1,40 @@
 What happens when you initialize a repository? Why do you need to do it?
+初始化版本库时会发生什么情况？为什么你需要这样做？
+初始化后会添加git metadata
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
+暂存区与工作目录和版本库有何不同？你认为它具有什么价值？
+电脑上的文件首先存在于working directory --> 通过git add添加到staging area ；
+通过 git status查看当前staging area的状态--> 通过git commit提交文件到repository
+staging area可以让用户选择什么时候提交什么内容 避免重复
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+如何使用暂存区确保为每项逻辑更改进行一次提交？
+将working directory的文件git add到staging area, 然后再git commit
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+在哪些情况下，分支可以帮助你有序地组织历史记录？分支将如何提供帮助？
+在你需要尝试新的功能但又不确定是否能够成功的情况下，可以创建分支来进行尝试
+或者在尝试新的版本的时候，也可以创建分支来继续
+可以通过切换当前所在的branch来进行更改
 
 How do the diagrams help you visualize the branch structure?
+图表如何帮助你直观显示分支结构？
+ git log --graph --oneline master coins
+ 使用图表可以清晰的显示出master以及其分支的结构
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+将两个分支合并到一起有何结果？为什么我们在图表中表示它的方式是那样的？
+将指定的疯子合并到当前checkout的分支中，并为该分支新建一个提交
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+Git 的自动合并与始终手动进行合并各有何优缺点？
+git自动合并时可能会产生冲突，此时需要手动进行合并
+当没有冲突时git自动合并可以省去手动合并的步骤
+
+
